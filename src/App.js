@@ -27,7 +27,7 @@ function App() {
           drinkId={drinkId}
           sideId={sideId} />
       </div>
-      <div>
+      <div>Menu
         <FoodDropdown setFoodId={setFoodId} />
         <DrinkDropdown setDrinkId={setDrinkId} />
         <SideDropdown setSideId={setSideId} />
