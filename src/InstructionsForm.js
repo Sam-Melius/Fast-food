@@ -9,11 +9,14 @@ export default function InstructionsForm({ addInstructions, setAddInstructions }
     setAddInstructions([...addInstructions, instructionsInput]);
     setInstructionsInput('');
   }
+  function handleChange(e) {
+    setInstructionsInput(e.target.value);
+  }
 
   return <div>
     <form onSubmit={handleSubmit}>
         Additional Instructions:
-      <input value={instructionsInput} onChange={e => setInstructionsInput(e.target.value)} />
+      <input value={instructionsInput} onChange={handleChange} />
       <button>Submit</button>
     </form>
   </div>;
