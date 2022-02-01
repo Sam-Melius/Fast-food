@@ -13,6 +13,7 @@ function App() {
   const [drinkId, setDrinkId] = useState(1);
   const [sideId, setSideId] = useState(1);
   const [orderName, setOrderName] = useState('dude');
+  const [addInstructions, setAddInstructions] = useState(['All the bacon you have', 'no anchovies, if there is one anchovy i swear... ']);
 
   return (
     <div className="App">
@@ -28,6 +29,7 @@ function App() {
         <DrinkDropdown setDrinkId={setDrinkId} />
         <SideDropdown setSideId={setSideId} />
         <NameInput setOrderName={setOrderName} />
+        <InstructionsForm addInstructions={addInstructions} setAddInstructions={setAddInstructions} />
         
       </div>
       
