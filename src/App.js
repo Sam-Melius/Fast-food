@@ -6,6 +6,7 @@ import FoodDropdown from './FoodDropdown';
 import DrinkDropdown from './DrinkDropdown';
 import SideDropdown from './SideDropdown';
 import NameInput from './NameInput';
+import InstructionsForm from './InstructionsForm';
 
 
 function App() {
