@@ -13,7 +13,7 @@ export default function InstructionsForm({ addInstructions, setAddInstructions }
     setInstructionsInput(e.target.value);
   }
 
-  return <div>
+  return <div className='add-form'>
     <form onSubmit={handleSubmit}>
         Additional Instructions:
       <input value={instructionsInput} onChange={handleChange} />
